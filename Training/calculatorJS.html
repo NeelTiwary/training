@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <script>
+        function add(){
+            var n1 = parseInt(document.getElementById("first").value);
+            var n2 = parseInt(document.getElementById("secound").value);
+            var p = n1+n2;
+            document.getElementById("result").value = p;
+        }
+
+        function sub(){
+            var n1 = parseInt(document.getElementById("first").value);
+            var n2 = parseInt(document.getElementById("secound").value);
+            var p = n1-n2;
+            document.getElementById("result").value = p;
+        }
+
+        function mul(){
+            var n1 = parseInt(document.getElementById("first").value);
+            var n2 = parseInt(document.getElementById("secound").value);
+            var p = n1*n2;
+            document.getElementById("result").value = p;
+        }
+
+        function divide(){
+            var n1 = parseInt(document.getElementById("first").value);
+            var n2 = parseInt(document.getElementById("secound").value);
+            var p = n1/n2;
+            document.getElementById("result").value = p;
+        }
+
+    </script>
+</head>
+<body>
+    <table align="center" border="1" style="border-collapse:collapse">
+        <caption ><h1>Calculator</h1></caption>
+        <tr>
+            <td>First Number:</td>
+            <td><input id="first" type="text"></td>
+        </tr>
+        <tr>
+            <td>Secound Number:</td>
+            <td><input id="secound" type="text"></td>
+        </tr>
+
+        <tr>
+            <td>Result:</td>
+            <td><input id="result" type="text"></td>
+        </tr>
+
+        <tr>
+            <td>
+                <button onclick="add()">ADD</button>
+                <button onclick="sub()">Sub</button>
+            </td>
+            <td>
+                <button onclick="mul()">Multiply</button>
+                <button onclick="divide()">Divide</button>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>

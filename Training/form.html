@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        table{
+            border: solid 2px #030350;
+            background-color: rgb(21, 6, 37);
+            color: rgb(214, 208, 201);
+            padding:20px;
+            border-radius: 7px;
+        }
+        h2{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <h2>Student Form</h2>
+    <table align="center">
+        <tr>
+            <td>
+                <label>Enter your Name:</label>
+            </td>
+            <td>
+                <input type="text" name="name" required/>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label>Enter your Father Name:</label>
+            </td>
+            <td>
+                <input type="text" name="father name"required/>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label>Enter your Email:</label>
+            </td>
+            <td>
+                <input type="email" name="email" required/>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label>Gender:</label>
+            </td>
+            <td>
+                <input type="radio" name="gender" required/>Male
+                <input type="radio" name="gender" required/>Female
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label>Course:</label>
+            </td>
+            <td>
+                <input type="checkbox" name="java" required/>Java
+                <input type="checkbox" name="html" required/>Html
+                <input type="checkbox" name="CSS" required/>CSS
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label>State:</label>
+            </td>
+            <td>
+                <select>
+                    <option name="AP">AP</option>
+                    <option name="Odisha">Odisha</option>
+                    <option name="Bihar">Bihar</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label>Date of joining:</label>
+            </td>
+            <td>
+                <input type="date" name="dob" required/>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label>Comments:</label>
+            </td>
+            <td>
+                <textarea name="comments"></textarea>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <button value="submit">Submit</button>
+            </td>
+
+        </tr>
+    </table>
+    </form>
+</body>
+</html>
